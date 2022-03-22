@@ -1,4 +1,3 @@
-<script src="http://code.jquery.com/jquery-latest.js"></script>
 let SearchService = (() => {
   fn = {};
   fn.queryText = null;
