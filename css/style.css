@@ -897,6 +897,7 @@ footer.footer {
   padding: 40px 10px 120px 10px;
   width: 100%;
   color: var(--color-site-footer);
+  color: #fff;
   margin: 0px auto;
   overflow: hidden;
   text-align: center;
