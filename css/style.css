@@ -2641,6 +2641,18 @@ img.lazyload:not(.placeholder).loaded {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none;
+  box-shadow: 0 1px 20px -6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 20px -6px rgba(0,0,0,0.5);
+  transition: box-shadow 0.5s ease;
+  -webkit-transition: box-shadow 0.5s ease;
+  -khtml-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+}
+.widget:hover {
+  box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.5);
 }
 .widget ul li,
 .widget ol li {
