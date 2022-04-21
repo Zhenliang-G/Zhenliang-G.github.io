@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://www.zlgan.top/"/>
+  
+  <link rel="canonical" href="https://www.zlgan.top/2022/04/21/knn(自己写)-based-anomaly-detection/"/>
   <!-- 渲染优化 -->
   <!-- <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -20,20 +20,27 @@
   <meta content="Zhenliang&#39;Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1650513811441" as="style">
+  <link rel="preload" href="/css/style.css?time=1650513811370" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Zhenliang'Blog</title>
-  <meta name="keywords" content="">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhenliang&#39;Blog">
-<meta property="og:url" content="https://www.zlgan.top/index.html">
+  <title>KNN(自己写)-Based Anomaly Detection - Zhenliang'Blog</title>
+  <meta name="keywords" content="Anomaly Detection,机器学习,KNN,null">
+  <meta name="description" content="KNN-Based Anomaly Detection上一篇通过调用sklearn中的knn实现Anomaly Detection，听老师指正以及和同学讨论之后，觉得自己可能有点小偏差。 可能老师讲的做异常检测的KNN的正常的做法是：  数据集划分，训练集全部用正常样本，测试集异常正常都有 散点图中的横坐标还是index，纵坐标是测试样本和正常样本的最小k个距离的平均 这样，就可以通过，不断的取阈">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KNN(自己写)-Based Anomaly Detection">
+<meta property="og:url" content="https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/index.html">
 <meta property="og:site_name" content="Zhenliang&#39;Blog">
+<meta property="og:description" content="KNN-Based Anomaly Detection上一篇通过调用sklearn中的knn实现Anomaly Detection，听老师指正以及和同学讨论之后，觉得自己可能有点小偏差。 可能老师讲的做异常检测的KNN的正常的做法是：  数据集划分，训练集全部用正常样本，测试集异常正常都有 散点图中的横坐标还是index，纵坐标是测试样本和正常样本的最小k个距离的平均 这样，就可以通过，不断的取阈">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2022-04-21T02:44:32.281Z">
+<meta property="article:modified_time" content="2022-04-21T04:03:12.020Z">
 <meta property="article:author" content="Zhenliang_Gan">
+<meta property="article:tag" content="Anomaly Detection">
+<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="KNN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1790,8 +1797,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1650513811441" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1650513811441"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1650513811370" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1650513811370"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1868,7 +1875,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1650513811441","sites":"/js/plugins/sites.js?time=1650513811441","friends":"/js/plugins/friends.js?time=1650513811441","parallax":"/js/plugins/parallax.js?time=1650513811441","rightMenu":"/js/plugins/rightMenu.js?time=1650513811441","contributors":"/js/plugins/contributors.js?time=1650513811441","message":"/js/thirdparty/message.js?time=1650513811441","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650513811441","search":"/js/search/hexo.js?time=1650513811441"},"css":{"style":"/css/style.css?time=1650513811441","message":"/css/message.css?time=1650513811441"}},
+    cdn: {"js":{"app":"/js/app.js?time=1650513811370","sites":"/js/plugins/sites.js?time=1650513811370","friends":"/js/plugins/friends.js?time=1650513811370","parallax":"/js/plugins/parallax.js?time=1650513811370","rightMenu":"/js/plugins/rightMenu.js?time=1650513811370","contributors":"/js/plugins/contributors.js?time=1650513811370","message":"/js/thirdparty/message.js?time=1650513811370","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650513811370","search":"/js/search/hexo.js?time=1650513811370"},"css":{"style":"/css/style.css?time=1650513811370","message":"/css/message.css?time=1650513811370"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
     lastupdate: new Date('Thu Apr 21 2022 12:03:31 GMT+0800 (中国标准时间)'),
     sidebar: {
@@ -2255,7 +2262,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicklove.js"></script>
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2544,7 +2551,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2640,7 +2647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2650,101 +2657,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Zhenliang'Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Zhenliang'Blog">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/21/CNN-Based-Anomaly-Detection/"  itemprop="url">
-        CNN(Pytorch)-Based Anomaly Detection
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        CNN(Pytorch)-Based Anomaly DetectionProject文件结构
-Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-21T11:34:31+08:00">2022-04-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/">入侵检测</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/" itemprop="url"><span itemprop="name">入侵检测</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/21/CNN-Based-Anomaly-Detection/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Zhenliang'Blog">
@@ -2754,265 +2667,282 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         KNN(自己写)-Based Anomaly Detection
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        KNN-Based Anomaly Detection上一篇通过调用sklearn中的knn实现Anomaly Detection，听老师指正以及和同学讨论之后，觉得自己可能有点小偏差。
-可能老师讲的做异常检测的KNN的正常的做法是：
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://cdn.jsdelivr.net/gh/Zhenliang-G/Blog_img/tx.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/Zhenliang-G/Blog_img/tx.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Zhenliang Gan</p>
+  </a>
+</div>
 
-数据集划分，训练集全部用正常样本，测试集异常正常都有
-散点图中的横坐标还是index，纵坐标是测试样本和正常样本的最小k个距离的平均
-这样，就可以通过，不断...
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/">入侵检测</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/" itemprop="url"><span itemprop="name">入侵检测</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-21T10:44:32+08:00">2022-04-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/">入侵检测</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/" itemprop="url"><span itemprop="name">入侵检测</span></a>
-            </span>
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-04-21T10:44:32+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Apr 21, 2022</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-        <div>
-          <a class='readmore' href='/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/' itemprop="url">
-            Read More
-          </a>
+      <div id="lc-pv" data-title="KNN(自己写)-Based Anomaly Detection" data-path="/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/">
+        <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>1.6k words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>8 min</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="KNN-Based-Anomaly-Detection"><a href="#KNN-Based-Anomaly-Detection" class="headerlink" title="KNN-Based Anomaly Detection"></a>KNN-Based Anomaly Detection</h1><p>上一篇通过调用sklearn中的knn实现Anomaly Detection，听老师指正以及和同学讨论之后，觉得自己可能有点小偏差。</p>
+<p>可能老师讲的做异常检测的KNN的正常的做法是：</p>
+<ul>
+<li>数据集划分，训练集全部用正常样本，测试集异常正常都有</li>
+<li>散点图中的横坐标还是index，纵坐标是测试样本和<strong>正常样本的最小k个距离的平均</strong></li>
+<li>这样，就可以通过，不断的取阈值来画出ROC曲线。每取一个阈值，阈值以上都判定为异常点，阈值以下判断为正常点，计算FPR和TPR</li>
+<li>这样做不能通过调用函数来计算准确率，因为训练集只有一个类别</li>
+</ul>
+<h2 id="Project文件结构"><a href="#Project文件结构" class="headerlink" title="Project文件结构"></a>Project文件结构</h2><div class="story post-story"><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/image-20220421102535742-16505112953691.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/image-20220421102535742-16505112953691.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220421102535742"></p>
+</div><h2 id="Dataloder-py"><a href="#Dataloder-py" class="headerlink" title="Dataloder.py"></a>Dataloder.py</h2><div class="story post-story"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> preprocessing</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 根据file读取数据</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">readData</span>(<span class="params">file</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Loading raw data...&quot;</span>)</span><br><span class="line">    raw_data = pd.read_csv(file, header=<span class="literal">None</span>, low_memory=<span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">return</span> raw_data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回需要清除的行数list</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">clearDirtyData</span>(<span class="params">df</span>):</span><br><span class="line">    dropList = df[(df[<span class="number">14</span>] == <span class="string">&quot;Nan&quot;</span>) | (df[<span class="number">15</span>] == <span class="string">&quot;Infinity&quot;</span>)].index.tolist()</span><br><span class="line">    <span class="keyword">return</span> dropList</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lookData</span>(<span class="params">raw_data</span>):</span><br><span class="line">    <span class="comment"># 打印数据集的标签数据数量</span></span><br><span class="line">    <span class="comment"># last_column_index = raw_data.shape[1] - 1</span></span><br><span class="line">    <span class="comment"># print(raw_data[last_column_index].value_counts())</span></span><br><span class="line">    <span class="comment"># 取出数据集标签部分</span></span><br><span class="line">    labels = raw_data.iloc[:, raw_data.shape[<span class="number">1</span>] - <span class="number">1</span>:]</span><br><span class="line">    <span class="comment"># 多维数组转为以为数组</span></span><br><span class="line">    labels = labels.values.ravel()</span><br><span class="line">    label_set = <span class="built_in">set</span>(labels)</span><br><span class="line">    <span class="keyword">return</span> label_set</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">separateData</span>(<span class="params">raw_data</span>):</span><br><span class="line">    lists = raw_data.values.tolist()</span><br><span class="line">    temp_lists = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="number">2</span>):</span><br><span class="line">        temp_lists.append([])</span><br><span class="line">    <span class="comment"># 得到raw_data的数据标签集合</span></span><br><span class="line">    label_set = lookData(raw_data)</span><br><span class="line">    <span class="comment"># 将无序的数据标签集合转换为有序的list</span></span><br><span class="line">    label_list = <span class="built_in">list</span>(label_set)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(lists)):</span><br><span class="line">        <span class="comment"># 得到所属标签的索引号</span></span><br><span class="line">        data_index = label_list.index(lists[i][<span class="built_in">len</span>(lists[<span class="number">0</span>]) - <span class="number">1</span>])</span><br><span class="line">        temp_lists[data_index].append(lists[i])</span><br><span class="line">    <span class="keyword">return</span> temp_lists</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">DataLoder</span>():</span><br><span class="line">    acc_time = <span class="number">0</span></span><br><span class="line">    <span class="comment"># ----------------------------------------读取数据，合并到一个DataFrame---------------------------------------</span></span><br><span class="line">    start = time.time()</span><br><span class="line">    data_1 = readData(<span class="string">&quot;data\MachineLearningCVE\Monday-WorkingHours.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_1 = data_1.drop([<span class="number">0</span>])  <span class="comment"># 去掉非数值类型的第一行</span></span><br><span class="line"></span><br><span class="line">    data_2 = readData(<span class="string">&quot;data\MachineLearningCVE\Tuesday-WorkingHours.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_2 = data_2.drop([<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    data_3 = readData(<span class="string">&quot;data\MachineLearningCVE\Wednesday-workingHours.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_3 = data_3.drop([<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    data_4 = readData(<span class="string">&quot;data\MachineLearningCVE\Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_4 = data_4.drop([<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    data_5 = readData(<span class="string">&quot;data\MachineLearningCVE\Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_5 = data_5.drop([<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    data_6 = readData(<span class="string">&quot;data\MachineLearningCVE\Friday-WorkingHours-Morning.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_6 = data_6.drop([<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    data_7 = readData(<span class="string">&quot;data\MachineLearningCVE\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_7 = data_7.drop([<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    data_8 = readData(<span class="string">&quot;data\MachineLearningCVE\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv&quot;</span>)</span><br><span class="line">    data_8 = data_8.drop([<span class="number">0</span>])</span><br><span class="line">    end = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;数据加载时间：&#x27;</span>, end - start, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">    acc_time += end - start</span><br><span class="line">    <span class="comment"># ----------------------------------------处理数据---------------------------------------</span></span><br><span class="line">    <span class="comment"># print(&#x27;开始处理数据&#x27;)</span></span><br><span class="line">    start = time.time()</span><br><span class="line">    temp = [data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8]</span><br><span class="line">    <span class="comment"># temp = [data_7, data_8]</span></span><br><span class="line">    data_all = pd.concat(temp)</span><br><span class="line">    <span class="comment"># 删除Nan和Infinity所在行</span></span><br><span class="line">    data_list_clear = clearDirtyData(data_all)</span><br><span class="line">    data_all = data_all.drop(data_list_clear)</span><br><span class="line">    <span class="built_in">print</span>(data_all[data_all.shape[<span class="number">1</span>] - <span class="number">1</span>].value_counts())</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数据量太大，可以降采样frac=抽取百分比</span></span><br><span class="line">    data_all = data_all.sample(frac=<span class="number">0.01</span>)</span><br><span class="line">    <span class="built_in">print</span>(data_all[data_all.shape[<span class="number">1</span>] - <span class="number">1</span>].value_counts())</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把最后一列lable转化为数值</span></span><br><span class="line">    data_all[data_all.shape[<span class="number">1</span>] - <span class="number">1</span>], attacks = pd.factorize(data_all[data_all.shape[<span class="number">1</span>] - <span class="number">1</span>], sort=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment"># data_all[78][data_all[78] != 0] = 1</span></span><br><span class="line">    <span class="comment"># print(data_all[data_all.shape[1] - 1].value_counts())</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># ----------------------------------------划分正常，异常样本---------------------------------------</span></span><br><span class="line">    features = data_all.iloc[:, :data_all.shape[<span class="number">1</span>] - <span class="number">1</span>].values</span><br><span class="line">    labels = data_all.iloc[:, data_all.shape[<span class="number">1</span>] - <span class="number">1</span>:].values</span><br><span class="line">    <span class="comment"># 标准化.高斯分布(0,1)</span></span><br><span class="line">    features = preprocessing.scale(features)</span><br><span class="line">    <span class="comment"># 最小最大值标准化,最小0，最大1</span></span><br><span class="line">    <span class="comment"># features = preprocessing.minmax_scale(features)</span></span><br><span class="line">    <span class="comment"># 归一化</span></span><br><span class="line">    <span class="comment"># features = preprocessing.normalize(features, norm=&quot;l2&quot;)</span></span><br><span class="line">    data_all = np.c_[features, labels]</span><br><span class="line">    <span class="comment"># 变成二分类问题</span></span><br><span class="line">    data_all[:, <span class="number">78</span>][data_all[:, <span class="number">78</span>] != <span class="number">0</span>] = <span class="number">1</span></span><br><span class="line">    data_all = pd.DataFrame(data_all)</span><br><span class="line">    lists = separateData(data_all)</span><br><span class="line">    normal = pd.DataFrame(lists[<span class="number">0</span>])</span><br><span class="line">    train = normal.iloc[<span class="number">0</span>:<span class="built_in">int</span>(normal.shape[<span class="number">0</span>] / <span class="number">3</span> * <span class="number">2</span>), :]</span><br><span class="line">    normal = normal.iloc[<span class="built_in">int</span>(normal.shape[<span class="number">0</span>] / <span class="number">3</span> * <span class="number">2</span>):normal.shape[<span class="number">0</span>], :]</span><br><span class="line">    abnormal = pd.DataFrame(lists[<span class="number">1</span>])</span><br><span class="line">    temp = [normal, abnormal]</span><br><span class="line">    data_all = pd.concat(temp)</span><br><span class="line">    data_all = data_all.sample(frac=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    test_x = data_all.iloc[:, :data_all.shape[<span class="number">1</span>] - <span class="number">1</span>].values</span><br><span class="line">    test_y = data_all.iloc[:, data_all.shape[<span class="number">1</span>] - <span class="number">1</span>:].values.ravel()</span><br><span class="line"></span><br><span class="line">    train_x = train.iloc[:, :data_all.shape[<span class="number">1</span>] - <span class="number">1</span>].values</span><br><span class="line">    train_y = train.iloc[:, data_all.shape[<span class="number">1</span>] - <span class="number">1</span>:].values.ravel()</span><br><span class="line"></span><br><span class="line">    end = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;数据处理时间：&#x27;</span>, end - start, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">    acc_time += end - start</span><br><span class="line">    <span class="keyword">return</span> train_x, test_x, train_y, test_y, acc_time</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</div><h2 id="KNN-py"><a href="#KNN-py" class="headerlink" title="KNN.py"></a>KNN.py</h2><div class="story post-story"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">KNN</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, k</span>):</span><br><span class="line">        <span class="keyword">assert</span> k &gt;= <span class="number">1</span>, <span class="string">&#x27;k must be valid&#x27;</span></span><br><span class="line">        self.k = k</span><br><span class="line">        self._x_train = <span class="literal">None</span></span><br><span class="line">        self._y_train = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fit</span>(<span class="params">self, x_train, y_train</span>):</span><br><span class="line">        self._x_train = x_train</span><br><span class="line">        self._y_train = y_train</span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_predict</span>(<span class="params">self, x</span>):</span><br><span class="line">        d = [np.sqrt(np.<span class="built_in">sum</span>((x_i - x) ** <span class="number">2</span>)) <span class="keyword">for</span> x_i <span class="keyword">in</span> self._x_train]</span><br><span class="line">        nearest = np.argsort(d)</span><br><span class="line">        top_k = [self._y_train[i] <span class="keyword">for</span> i <span class="keyword">in</span> nearest[:self.k]]</span><br><span class="line">        votes = Counter(top_k)</span><br><span class="line">        <span class="keyword">return</span> votes.most_common(<span class="number">1</span>)[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">predict</span>(<span class="params">self, X_predict</span>):</span><br><span class="line">        y_predict = [self._predict(x1) <span class="keyword">for</span> x1 <span class="keyword">in</span> X_predict]</span><br><span class="line">        <span class="keyword">return</span> np.array(y_predict)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">distance</span>(<span class="params">self, x</span>):</span><br><span class="line">        d = [np.sqrt(np.<span class="built_in">sum</span>((x_i - x) ** <span class="number">2</span>)) <span class="keyword">for</span> x_i <span class="keyword">in</span> self._x_train]</span><br><span class="line">        d = np.array(d)</span><br><span class="line">        d = np.sort(d)</span><br><span class="line">        d = d[:self.k].mean()</span><br><span class="line">        <span class="keyword">return</span> d</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">Distance</span>(<span class="params">self, X_predict</span>):</span><br><span class="line">        res = [self.distance(x1) <span class="keyword">for</span> x1 <span class="keyword">in</span> X_predict]</span><br><span class="line">        <span class="keyword">return</span> np.array(res)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__repr__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;knn(k=%d):&#x27;</span> % self.k</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">score</span>(<span class="params">self, x_test, y_test</span>):</span><br><span class="line">        y_predict = self.predict(x_test)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">sum</span>(y_predict == y_test) / <span class="built_in">len</span>(x_test)</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="main-py"><a href="#main-py" class="headerlink" title="main.py"></a>main.py</h2><div class="story post-story"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> accuracy_score</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> KNN <span class="keyword">import</span> KNN</span><br><span class="line"><span class="keyword">from</span> Dataloder <span class="keyword">import</span> DataLoder</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">visualize</span>(<span class="params">X</span>):</span><br><span class="line">    <span class="comment"># dd = []</span></span><br><span class="line">    <span class="comment"># for d in range(len(X[0])):</span></span><br><span class="line">    <span class="comment">#     if X[1][d] &gt; 10:</span></span><br><span class="line">    <span class="comment">#         dd.append(d)</span></span><br><span class="line">    <span class="comment">#         # X = np.delete(X, d, axis=1)</span></span><br><span class="line">    <span class="comment">#         # X[1][d] = avg</span></span><br><span class="line">    <span class="comment"># X = np.delete(X, dd, axis=1)</span></span><br><span class="line">    color = [<span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;r&#x27;</span>]  <span class="comment"># 设置颜色</span></span><br><span class="line">    colors = []</span><br><span class="line">    marker = [<span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;x&#x27;</span>]  <span class="comment"># 设置点的形状</span></span><br><span class="line">    makers = []</span><br><span class="line">    <span class="keyword">for</span> d <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(X[<span class="number">2</span>])):</span><br><span class="line">        colors.append(color[<span class="built_in">int</span>(X[<span class="number">2</span>][d])])</span><br><span class="line">    plt.figure()</span><br><span class="line">    plt.scatter(X[<span class="number">0</span>], X[<span class="number">1</span>], c=colors, edgecolors=<span class="string">&#x27;None&#x27;</span>, s=<span class="number">2</span>, alpha=<span class="number">1</span>)</span><br><span class="line">    plt.ylim((<span class="number">0</span>, <span class="number">30</span>))</span><br><span class="line">    plt.savefig(<span class="string">&#x27;san.png&#x27;</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">roc</span>(<span class="params">X</span>):</span><br><span class="line">    normal = <span class="number">0</span></span><br><span class="line">    X_size = X.shape[<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># roc_rate = np.zeros((2, X_size))</span></span><br><span class="line">    roc_rate = np.zeros((<span class="number">2</span>, <span class="number">100000</span>))  <span class="comment"># 点的数量</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(X_size):</span><br><span class="line">        <span class="keyword">if</span> X[<span class="number">2</span>][i] == <span class="number">0</span>:</span><br><span class="line">            normal += <span class="number">1</span></span><br><span class="line">    abnormal = X_size - normal</span><br><span class="line">    <span class="comment"># max_dis = X[1].max()</span></span><br><span class="line">    max_dis = <span class="number">10</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10000</span>):  <span class="comment"># 范围也是点的数量，越大时间越长，roc曲线越准确</span></span><br><span class="line">        threshold = max_dis / <span class="number">10000</span> * j</span><br><span class="line">        normal1 = <span class="number">0</span></span><br><span class="line">        abnormal1 = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(X_size):</span><br><span class="line">            <span class="keyword">if</span> X[<span class="number">1</span>][k] &gt; threshold <span class="keyword">and</span> X[<span class="number">2</span>][k] == <span class="number">0</span>:</span><br><span class="line">                normal1 += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> X[<span class="number">1</span>][k] &gt; threshold <span class="keyword">and</span> X[<span class="number">2</span>][k] != <span class="number">0</span>:</span><br><span class="line">                abnormal1 += <span class="number">1</span></span><br><span class="line">        <span class="comment"># ROC曲线：横轴误报率，即阈值以上正常点 / 全体正常的点；纵轴检测率，即阈值以上异常点 / 全体异常点</span></span><br><span class="line">        roc_rate[<span class="number">0</span>][j] = normal1 / normal  <span class="comment"># 阈值以上正常点/全体正常的点</span></span><br><span class="line">        roc_rate[<span class="number">1</span>][j] = abnormal1 / abnormal  <span class="comment"># 阈值以上异常点/全体异常点</span></span><br><span class="line">        <span class="comment"># roc_rate[0][j] = (abnormal-abnormal1) / abnormal  # 阈值以下异常点/全体异常的点</span></span><br><span class="line">        <span class="comment"># roc_rate[1][j] = (normal-normal1) / normal  # 阈值以下正常点/全体正常点</span></span><br><span class="line">    plt.figure()</span><br><span class="line">    plt.scatter(roc_rate[<span class="number">0</span>], roc_rate[<span class="number">1</span>], edgecolors=<span class="string">&#x27;None&#x27;</span>, s=<span class="number">1</span>, alpha=<span class="number">1</span>)</span><br><span class="line">    plt.savefig(<span class="string">&#x27;Roc.png&#x27;</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    train_x, test_x, train_y, test_y, acc_time = DataLoder()</span><br><span class="line">    model = KNN(k=<span class="number">1</span>)</span><br><span class="line">    start = time.time()</span><br><span class="line">    model.fit(train_x, train_y)</span><br><span class="line">    end = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;训练时间：&#x27;</span>, end - start, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">    acc_time += end - start</span><br><span class="line"></span><br><span class="line">    start = time.time()</span><br><span class="line">    predict = model.predict(test_x)</span><br><span class="line">    end = time.time()</span><br><span class="line">    distance = model.Distance(test_x)</span><br><span class="line">    result = np.zeros((<span class="built_in">len</span>(test_x), <span class="number">3</span>))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(test_x)):</span><br><span class="line">        <span class="comment"># 序号 最小欧氏距离 测试集数据类别</span></span><br><span class="line">        result[i] = i + <span class="number">1</span>, distance[i], test_y[i]</span><br><span class="line">    <span class="comment"># 矩阵转置</span></span><br><span class="line">    result = np.transpose(result)</span><br><span class="line">    visualize(result)</span><br><span class="line">    roc(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;预测时间：&#x27;</span>, end - start, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">    acc_time += end - start</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总时间：&#x27;</span>, acc_time, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</div><h2 id="运行结果可视化："><a href="#运行结果可视化：" class="headerlink" title="运行结果可视化："></a>运行结果可视化：</h2><div class="story post-story"><h3 id="散点图："><a href="#散点图：" class="headerlink" title="散点图："></a>散点图：</h3><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/san.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/san.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="san"></p>
+<h3 id="ROC："><a href="#ROC：" class="headerlink" title="ROC："></a>ROC：</h3><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/roc.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/roc.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="roc"></p>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>📚 本文由<a href="https://www.zlgan.top/"> Zhenliang Gan </a>创作，转载请注明出处</p>
+
+              
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>🔗 本文链接：<a href=https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/>https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-21T12:03:12+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Apr 21, 2022</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://www.zlgan.top/2022/04/21/KNN_Sklearn-Based%20Anomaly%20Detection/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Zhenliang'Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Zhenliang'Blog">
-    <meta itemprop="description" content="">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/21/KNN_Sklearn-Based%20Anomaly%20Detection/"  itemprop="url">
-        KNN_Sklearn-Based Anomaly Detection
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Anomaly-Detection/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Anomaly Detection</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>机器学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/KNN/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>KNN</p></a></div>
+  <span hidden itemprop="keywords">Anomaly Detection 机器学习 KNN</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        KNN_Sklearn-Based Anomaly Detection这里调用Sklearn中的KNN，实现对ICI-IDS2017数据集的异常检测。
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/&title=KNN(自己写)-Based Anomaly Detection - Zhenliang'Blog&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/&title=KNN(自己写)-Based Anomaly Detection - Zhenliang'Blog&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/&title=KNN(自己写)-Based Anomaly Detection - Zhenliang'Blog&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2022/04/21/CNN-Based-Anomaly-Detection/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>CNN(Pytorch)-Based Anomaly Detection</p>
+          <p class='content'>CNN(Pytorch)-Based Anomaly DetectionProject文件结构
+Dataloder.py1234567891011121314151617181920212223...</p>
+        </a>
+      
+      
+        <a class='next' href='/2022/04/21/KNN_Sklearn-Based%20Anomaly%20Detection/'>
+          <p class='title'>KNN_Sklearn-Based Anomaly Detection<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>KNN_Sklearn-Based Anomaly Detection这里调用Sklearn中的KNN，实现对ICI-IDS2017数据集的异常检测。
 数据处理为二分类任务。
-如果想做多分类也可以，在数据处理Dataloder.py注释掉:
-12# 变成二分类问题，0正常，1异常# labels[labels != 0] = 1
-
-在main注释掉:
-1# roc_sklearn(test_...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-21T09:20:51+08:00">2022-04-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/">入侵检测</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/" itemprop="url"><span itemprop="name">入侵检测</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/21/KNN_Sklearn-Based%20Anomaly%20Detection/' itemprop="url">
-            Read More
-          </a>
-        </div>
+如果想做多分类也可...</p>
+        </a>
       
     </div>
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://www.zlgan.top/2022/03/29/%E2%80%9C%E7%81%AB%E7%84%B0%E2%80%9D%E7%97%85%E6%AF%92/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Zhenliang'Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Zhenliang'Blog">
-    <meta itemprop="description" content="">
-  </span>
   
+
   
-  
+  <article class="post white-box reveal shadow" id="comments">
     <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/03/29/%E2%80%9C%E7%81%AB%E7%84%B0%E2%80%9D%E7%97%85%E6%AF%92/"  itemprop="url">
-        “火焰”病毒
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        “火焰”病毒一、概述
-2012年5月，卡巴斯基实验室发现了一种功能强大、结构复杂的计算机病毒，该病毒的攻击目标仅为中东和部分非洲国家的计算机系统。由于该病毒的一个主要模块中含有“Flame”字样，所以卡巴斯基实验室将其命名为“火焰”（Flame）病毒。
-火焰病毒是一种集成了渗透扩散、预留后门、信息窃取等功能的间谍软件。通过分析火焰病毒的部分样本，安全专家发现该病毒可能在2008年就已经存在，...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-03-29T22:12:08+08:00">2022-03-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%98%B2%E8%8C%83/">恶意代码防范</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%98%B2%E8%8C%83/" itemprop="url"><span itemprop="name">恶意代码防范</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/03/29/%E2%80%9C%E7%81%AB%E7%84%B0%E2%80%9D%E7%97%85%E6%AF%92/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
+    <div id="layoutHelper-comments"></div>
+
+  </article>
   
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://www.zlgan.top/2022/03/25/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4&%E5%88%86%E7%BA%A7%E4%BF%9D%E6%8A%A4%E7%9A%84%E8%81%94%E7%B3%BB%E4%B8%8E%E5%8C%BA%E5%88%AB/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Zhenliang'Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Zhenliang'Blog">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/03/25/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4&%E5%88%86%E7%BA%A7%E4%BF%9D%E6%8A%A4%E7%9A%84%E8%81%94%E7%B3%BB%E4%B8%8E%E5%8C%BA%E5%88%AB/"  itemprop="url">
-        等级保护&分级保护的联系与区别
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        等级保护&amp;分级保护的联系与区别一、等级保护&amp;分级保护的不同定义等级保护信息安全等级保护是指对国家秘密信息、法人和其他组织及公民的专有信息以及公开信息和储存、传输、处理这些信息的信息系统分等级实行安全保护，对信息系统中使用的信息安全产品实行按等级管理，对信息系统中发生的信息安全事件分等级响应、处置。
-分级保护涉密信息系统分级保护是指涉密信息系统的建设使用单位根据分级保护管理办法...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-03-25T16:10:33+08:00">2022-03-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E4%BF%9D%E5%AF%86%E6%8A%80%E6%9C%AF%E6%A6%82%E8%AE%BA/">保密技术概论</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E4%BF%9D%E5%AF%86%E6%8A%80%E6%9C%AF%E6%A6%82%E8%AE%BA/" itemprop="url"><span itemprop="name">保密技术概论</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/03/25/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4&%E5%88%86%E7%BA%A7%E4%BF%9D%E6%8A%A4%E7%9A%84%E8%81%94%E7%B3%BB%E4%B8%8E%E5%8C%BA%E5%88%AB/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
 
 
 </div>
@@ -3022,203 +2952,38 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
     
     
 
-<section class="widget blogger shadow desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/Zhenliang-G/Blog_img/tx.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Zhenliang'Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/Zhenliang-G/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop pjax">
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%BF%9D%E5%AF%86%E6%8A%80%E6%9C%AF%E6%A6%82%E8%AE%BA/" href="/categories/%E4%BF%9D%E5%AF%86%E6%8A%80%E6%9C%AF%E6%A6%82%E8%AE%BA/"
-            active-action="action-categoriesE4BF9DE5AF86E68A80E69CAFE6A682E8AEBA"
-            ><div class='name'>保密技术概论</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/" href="/categories/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B/"
-            active-action="action-categoriesE585A5E4BEB5E6A380E6B58B"
-            ><div class='name'>入侵检测</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%98%B2%E8%8C%83/" href="/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%98%B2%E8%8C%83/"
-            active-action="action-categoriesE681B6E6848FE4BBA3E7A081E998B2E88C83"
-            ><div class='name'>恶意代码防范</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">Project文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataloder-py"><span class="toc-text">Dataloder.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KNN-py"><span class="toc-text">KNN.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#main-py"><span class="toc-text">main.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%9A"><span class="toc-text">运行结果可视化：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%A3%E7%82%B9%E5%9B%BE%EF%BC%9A"><span class="toc-text">散点图：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ROC%EF%BC%9A"><span class="toc-text">ROC：</span></a></li></ol></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Anomaly-Detection/" style="font-size: 24px; color: #555">Anomaly Detection</a> <a href="/tags/CNN/" style="font-size: 14px; color: #999">CNN</a> <a href="/tags/Flame/" style="font-size: 14px; color: #999">Flame</a> <a href="/tags/KNN/" style="font-size: 19px; color: #777">KNN</a> <a href="/tags/%E4%BF%9D%E5%AF%86/" style="font-size: 14px; color: #999">保密</a> <a href="/tags/%E5%88%86%E7%BA%A7%E4%BF%9D%E6%8A%A4/" style="font-size: 14px; color: #999">分级保护</a> <a href="/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%98%B2%E8%8C%83/" style="font-size: 14px; color: #999">恶意代码防范</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 24px; color: #555">机器学习</a> <a href="/tags/%E7%81%AB%E7%84%B0/" style="font-size: 14px; color: #999">火焰</a> <a href="/tags/%E7%97%85%E6%AF%92/" style="font-size: 14px; color: #999">病毒</a> <a href="/tags/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4/" style="font-size: 14px; color: #999">等级保护</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>10.7k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id='number'><i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-04-21 日</div> 
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-  
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3250,8 +3015,8 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="KNN(自己写)-Based Anomaly Detection";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3260,15 +3025,15 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
-      cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3364,7 +3129,7 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1650513811441.js"></script>
+<script src="/js/app.js?time=1650513811370.js"></script>
 
 
 
@@ -3481,7 +3246,7 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1650513811441')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1650513811370')</script>
 
 
 
@@ -3610,19 +3375,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1650513811441")
+        volantis.js("/js/plugins/sites.js?time=1650513811370")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1650513811441")
+        volantis.js("/js/plugins/friends.js?time=1650513811370")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1650513811441")
+        volantis.js("/js/plugins/contributors.js?time=1650513811370")
       }
     
   };
@@ -3735,7 +3500,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650513811441').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650513811370').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3755,7 +3520,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1650513811441");
+    return volantis.js("/js/search/hexo.js?time=1650513811370");
   }
 
   function loadSearchService() {
@@ -4074,7 +3839,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1650513811441').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1650513811370').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4307,7 +4072,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","keywords":null,"description":"","author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","description":""},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.zlgan.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zlgan.top/categories/入侵检测/","name":"入侵检测"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/21/KNN(自己写)-Based-Anomaly-Detection/","name":"KNN(自己写)-Based Anomaly Detection"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"KNN(自己写)-Based Anomaly Detection","description":"","datePublished":"2022-04-21T02:44:32.281Z","dateModified":"2022-04-21T04:03:12.020Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/","wordCount":0,"articleSection":"入侵检测","keywords":"Anomaly Detection,机器学习,KNN","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
