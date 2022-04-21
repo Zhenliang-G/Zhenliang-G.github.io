@@ -20,7 +20,7 @@
   <meta content="Zhenliang&#39;Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1650518736678" as="style">
+  <link rel="preload" href="/css/style.css?time=1650518825528" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-21T02:44:32.281Z">
-<meta property="article:modified_time" content="2022-04-21T05:25:22.870Z">
+<meta property="article:modified_time" content="2022-04-21T05:26:55.150Z">
 <meta property="article:author" content="Zhenliang_Gan">
 <meta property="article:tag" content="Anomaly Detection">
 <meta property="article:tag" content="机器学习">
@@ -1797,8 +1797,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1650518736678" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1650518736678"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1650518825528" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1650518825528"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1875,9 +1875,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1650518736678","sites":"/js/plugins/sites.js?time=1650518736678","friends":"/js/plugins/friends.js?time=1650518736678","parallax":"/js/plugins/parallax.js?time=1650518736678","rightMenu":"/js/plugins/rightMenu.js?time=1650518736678","contributors":"/js/plugins/contributors.js?time=1650518736678","message":"/js/thirdparty/message.js?time=1650518736678","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650518736678","search":"/js/search/hexo.js?time=1650518736678"},"css":{"style":"/css/style.css?time=1650518736678","message":"/css/message.css?time=1650518736678"}},
+    cdn: {"js":{"app":"/js/app.js?time=1650518825528","sites":"/js/plugins/sites.js?time=1650518825528","friends":"/js/plugins/friends.js?time=1650518825528","parallax":"/js/plugins/parallax.js?time=1650518825528","rightMenu":"/js/plugins/rightMenu.js?time=1650518825528","contributors":"/js/plugins/contributors.js?time=1650518825528","message":"/js/thirdparty/message.js?time=1650518825528","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650518825528","search":"/js/search/hexo.js?time=1650518825528"},"css":{"style":"/css/style.css?time=1650518825528","message":"/css/message.css?time=1650518825528"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Thu Apr 21 2022 13:25:36 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Thu Apr 21 2022 13:27:05 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","donate"],
       for_post: ["toc"],
@@ -2779,7 +2779,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </div><h2 id="main-py"><a href="#main-py" class="headerlink" title="main.py"></a>main.py</h2><div class="story post-story"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> accuracy_score</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> KNN <span class="keyword">import</span> KNN</span><br><span class="line"><span class="keyword">from</span> Dataloder <span class="keyword">import</span> DataLoder</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">visualize</span>(<span class="params">X</span>):</span><br><span class="line">    <span class="comment"># dd = []</span></span><br><span class="line">    <span class="comment"># for d in range(len(X[0])):</span></span><br><span class="line">    <span class="comment">#     if X[1][d] &gt; 10:</span></span><br><span class="line">    <span class="comment">#         dd.append(d)</span></span><br><span class="line">    <span class="comment">#         # X = np.delete(X, d, axis=1)</span></span><br><span class="line">    <span class="comment">#         # X[1][d] = avg</span></span><br><span class="line">    <span class="comment"># X = np.delete(X, dd, axis=1)</span></span><br><span class="line">    color = [<span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;r&#x27;</span>]  <span class="comment"># 设置颜色</span></span><br><span class="line">    colors = []</span><br><span class="line">    marker = [<span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;x&#x27;</span>]  <span class="comment"># 设置点的形状</span></span><br><span class="line">    makers = []</span><br><span class="line">    <span class="keyword">for</span> d <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(X[<span class="number">2</span>])):</span><br><span class="line">        colors.append(color[<span class="built_in">int</span>(X[<span class="number">2</span>][d])])</span><br><span class="line">    plt.figure()</span><br><span class="line">    plt.scatter(X[<span class="number">0</span>], X[<span class="number">1</span>], c=colors, edgecolors=<span class="string">&#x27;None&#x27;</span>, s=<span class="number">2</span>, alpha=<span class="number">1</span>)</span><br><span class="line">    plt.ylim((<span class="number">0</span>, <span class="number">30</span>))</span><br><span class="line">    plt.savefig(<span class="string">&#x27;san.png&#x27;</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">roc</span>(<span class="params">X</span>):</span><br><span class="line">    normal = <span class="number">0</span></span><br><span class="line">    X_size = X.shape[<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># roc_rate = np.zeros((2, X_size))</span></span><br><span class="line">    roc_rate = np.zeros((<span class="number">2</span>, <span class="number">100000</span>))  <span class="comment"># 点的数量</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(X_size):</span><br><span class="line">        <span class="keyword">if</span> X[<span class="number">2</span>][i] == <span class="number">0</span>:</span><br><span class="line">            normal += <span class="number">1</span></span><br><span class="line">    abnormal = X_size - normal</span><br><span class="line">    <span class="comment"># max_dis = X[1].max()</span></span><br><span class="line">    max_dis = <span class="number">10</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10000</span>):  <span class="comment"># 范围也是点的数量，越大时间越长，roc曲线越准确</span></span><br><span class="line">        threshold = max_dis / <span class="number">10000</span> * j</span><br><span class="line">        normal1 = <span class="number">0</span></span><br><span class="line">        abnormal1 = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(X_size):</span><br><span class="line">            <span class="keyword">if</span> X[<span class="number">1</span>][k] &gt; threshold <span class="keyword">and</span> X[<span class="number">2</span>][k] == <span class="number">0</span>:</span><br><span class="line">                normal1 += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> X[<span class="number">1</span>][k] &gt; threshold <span class="keyword">and</span> X[<span class="number">2</span>][k] != <span class="number">0</span>:</span><br><span class="line">                abnormal1 += <span class="number">1</span></span><br><span class="line">        <span class="comment"># ROC曲线：横轴误报率，即阈值以上正常点 / 全体正常的点；纵轴检测率，即阈值以上异常点 / 全体异常点</span></span><br><span class="line">        roc_rate[<span class="number">0</span>][j] = normal1 / normal  <span class="comment"># 阈值以上正常点/全体正常的点</span></span><br><span class="line">        roc_rate[<span class="number">1</span>][j] = abnormal1 / abnormal  <span class="comment"># 阈值以上异常点/全体异常点</span></span><br><span class="line">        <span class="comment"># roc_rate[0][j] = (abnormal-abnormal1) / abnormal  # 阈值以下异常点/全体异常的点</span></span><br><span class="line">        <span class="comment"># roc_rate[1][j] = (normal-normal1) / normal  # 阈值以下正常点/全体正常点</span></span><br><span class="line">    plt.figure()</span><br><span class="line">    plt.scatter(roc_rate[<span class="number">0</span>], roc_rate[<span class="number">1</span>], edgecolors=<span class="string">&#x27;None&#x27;</span>, s=<span class="number">1</span>, alpha=<span class="number">1</span>)</span><br><span class="line">    plt.savefig(<span class="string">&#x27;Roc.png&#x27;</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    train_x, test_x, train_y, test_y, acc_time = DataLoder()</span><br><span class="line">    model = KNN(k=<span class="number">1</span>)</span><br><span class="line">    start = time.time()</span><br><span class="line">    model.fit(train_x, train_y)</span><br><span class="line">    end = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;训练时间：&#x27;</span>, end - start, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">    acc_time += end - start</span><br><span class="line"></span><br><span class="line">    start = time.time()</span><br><span class="line">    predict = model.predict(test_x)</span><br><span class="line">    end = time.time()</span><br><span class="line">    distance = model.Distance(test_x)</span><br><span class="line">    result = np.zeros((<span class="built_in">len</span>(test_x), <span class="number">3</span>))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(test_x)):</span><br><span class="line">        <span class="comment"># 序号 最小欧氏距离 测试集数据类别</span></span><br><span class="line">        result[i] = i + <span class="number">1</span>, distance[i], test_y[i]</span><br><span class="line">    <span class="comment"># 矩阵转置</span></span><br><span class="line">    result = np.transpose(result)</span><br><span class="line">    visualize(result)</span><br><span class="line">    roc(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;预测时间：&#x27;</span>, end - start, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">    acc_time += end - start</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;总时间：&#x27;</span>, acc_time, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 </div><h2 id="运行结果可视化："><a href="#运行结果可视化：" class="headerlink" title="运行结果可视化："></a>运行结果可视化：</h2><div class="story post-story"><h3 id="散点图："><a href="#散点图：" class="headerlink" title="散点图："></a>散点图：</h3><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/san.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/san.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="san"></p>
-<h3 id="ROC："><a href="#ROC：" class="headerlink" title="ROC："></a>ROC：</h3><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/roc.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/roc.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="roc"></p>
+<h3 id="ROC："><a href="#ROC：" class="headerlink" title="ROC："></a>ROC：</h3><h4 id="10000个点"><a href="#10000个点" class="headerlink" title="10000个点"></a>10000个点</h4><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/roc.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/roc.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="roc"></p>
+<h4 id="100000个点"><a href="#100000个点" class="headerlink" title="100000个点"></a>100000个点</h4><p><img src="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/Roc0.png" class="lazyload" data-srcset="/../image/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/Roc0.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Roc0"></p>
 
 </div>
   </div>
@@ -2821,7 +2822,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-21T13:25:22+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-21T13:26:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Apr 21, 2022</p>
@@ -2964,7 +2965,7 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">Project文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataloder-py"><span class="toc-text">Dataloder.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KNN-py"><span class="toc-text">KNN.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#main-py"><span class="toc-text">main.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%9A"><span class="toc-text">运行结果可视化：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%A3%E7%82%B9%E5%9B%BE%EF%BC%9A"><span class="toc-text">散点图：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ROC%EF%BC%9A"><span class="toc-text">ROC：</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">Project文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataloder-py"><span class="toc-text">Dataloder.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KNN-py"><span class="toc-text">KNN.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#main-py"><span class="toc-text">main.py</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%9A"><span class="toc-text">运行结果可视化：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%A3%E7%82%B9%E5%9B%BE%EF%BC%9A"><span class="toc-text">散点图：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ROC%EF%BC%9A"><span class="toc-text">ROC：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#10000%E4%B8%AA%E7%82%B9"><span class="toc-text">10000个点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#100000%E4%B8%AA%E7%82%B9"><span class="toc-text">100000个点</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -3129,7 +3130,7 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1650518736678.js"></script>
+<script src="/js/app.js?time=1650518825528.js"></script>
 
 
 
@@ -3246,7 +3247,7 @@ Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1650518736678')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1650518825528')</script>
 
 
 
@@ -3375,19 +3376,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1650518736678")
+        volantis.js("/js/plugins/sites.js?time=1650518825528")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1650518736678")
+        volantis.js("/js/plugins/friends.js?time=1650518825528")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1650518736678")
+        volantis.js("/js/plugins/contributors.js?time=1650518825528")
       }
     
   };
@@ -3500,7 +3501,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650518736678').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650518825528').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3520,7 +3521,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1650518736678");
+    return volantis.js("/js/search/hexo.js?time=1650518825528");
   }
 
   function loadSearchService() {
@@ -3839,7 +3840,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1650518736678').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1650518825528').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4072,7 +4073,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zlgan.top/categories/入侵检测/","name":"入侵检测"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/21/KNN(自己写)-Based-Anomaly-Detection/","name":"KNN(自己写)-Based Anomaly Detection"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"KNN(自己写)-Based Anomaly Detection","description":"","datePublished":"2022-04-21T02:44:32.281Z","dateModified":"2022-04-21T05:25:22.870Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/","wordCount":0,"articleSection":"入侵检测","keywords":"Anomaly Detection,机器学习,KNN","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zlgan.top/categories/入侵检测/","name":"入侵检测"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/21/KNN(自己写)-Based-Anomaly-Detection/","name":"KNN(自己写)-Based Anomaly Detection"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"KNN(自己写)-Based Anomaly Detection","description":"","datePublished":"2022-04-21T02:44:32.281Z","dateModified":"2022-04-21T05:26:55.150Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/","wordCount":0,"articleSection":"入侵检测","keywords":"Anomaly Detection,机器学习,KNN","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
