@@ -5409,7 +5409,7 @@ p.p.subtitle:first-child {
 }
 span.p.logo,
 p.p.logo {
-  font-family: "albb_pht2.0", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
 }
 span.p.code,
 p.p.code {
