@@ -20,13 +20,13 @@
   <meta content="Zhenliang&#39;Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1650520678541" as="style">
+  <link rel="preload" href="/css/style.css?time=1650612705872" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
   <title>CNN(Pytorch)-Based Anomaly Detection - Zhenliang'Blog</title>
-  <meta name="keywords" content="Anomaly Detection,机器学习,CNN,null">
+  <meta name="keywords" content="Anomaly Detection,CNN,机器学习,null">
   <meta name="description" content="Project文件结构 Dataloder.py12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CNN(Pytorch)-Based Anomaly Detection">
@@ -36,11 +36,11 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-21T03:34:31.722Z">
-<meta property="article:modified_time" content="2022-04-21T05:38:38.017Z">
+<meta property="article:modified_time" content="2022-04-21T06:06:33.145Z">
 <meta property="article:author" content="Zhenliang_Gan">
 <meta property="article:tag" content="Anomaly Detection">
-<meta property="article:tag" content="机器学习">
 <meta property="article:tag" content="CNN">
+<meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -413,7 +413,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -422,7 +422,7 @@ button {
   font-size: 20px;
 }
 .cover-wrapper .cover-body .hover {
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   text-shadow: unset;
   transition: 0.5s;
@@ -1086,7 +1086,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1797,8 +1797,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1650520678541" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1650520678541"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1650612705872" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1650612705872"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1875,9 +1875,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1650520678541","sites":"/js/plugins/sites.js?time=1650520678541","friends":"/js/plugins/friends.js?time=1650520678541","parallax":"/js/plugins/parallax.js?time=1650520678541","rightMenu":"/js/plugins/rightMenu.js?time=1650520678541","contributors":"/js/plugins/contributors.js?time=1650520678541","message":"/js/thirdparty/message.js?time=1650520678541","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650520678541","search":"/js/search/hexo.js?time=1650520678541"},"css":{"style":"/css/style.css?time=1650520678541","message":"/css/message.css?time=1650520678541"}},
+    cdn: {"js":{"app":"/js/app.js?time=1650612705872","sites":"/js/plugins/sites.js?time=1650612705872","friends":"/js/plugins/friends.js?time=1650612705872","parallax":"/js/plugins/parallax.js?time=1650612705872","rightMenu":"/js/plugins/rightMenu.js?time=1650612705872","contributors":"/js/plugins/contributors.js?time=1650612705872","message":"/js/thirdparty/message.js?time=1650612705872","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650612705872","search":"/js/search/hexo.js?time=1650612705872"},"css":{"style":"/css/style.css?time=1650612705872","message":"/css/message.css?time=1650612705872"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Thu Apr 21 2022 13:57:58 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Fri Apr 22 2022 15:31:45 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","donate"],
       for_post: ["toc"],
@@ -2769,9 +2769,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>CNN_Pytorch.py</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torchvision</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> torch.utils.data <span class="keyword">as</span> Data</span><br><span class="line"><span class="keyword">from</span> Dataloder <span class="keyword">import</span> DataLoder</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> metrics</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> confusion_matrix</span><br><span class="line"></span><br><span class="line">epochs = <span class="number">100</span></span><br><span class="line">batch_size = <span class="number">128</span></span><br><span class="line">lr = <span class="number">0.001</span></span><br><span class="line"></span><br><span class="line">train_data, test_data, train_label, test_label, acc_time = DataLoder()</span><br><span class="line"></span><br><span class="line">train_data = train_data.reshape(train_data.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">78</span>)</span><br><span class="line">test_data = test_data.reshape(test_data.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">78</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 制作pytorch识别的数据集和定义模型</span></span><br><span class="line">train_data, train_label = torch.Tensor(train_data), torch.Tensor(train_label.T).long()</span><br><span class="line">test_data, test_label = torch.Tensor(test_data), torch.Tensor(test_label.T).long()</span><br><span class="line"></span><br><span class="line">train_dataset = Data.TensorDataset(train_data, train_label)</span><br><span class="line">test_dataset = Data.TensorDataset(test_data, test_label)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 制作Dataloder数据集，可迭代</span></span><br><span class="line">train_loader = Data.DataLoader(train_dataset, batch_size=<span class="number">128</span>, shuffle=<span class="literal">True</span>)</span><br><span class="line">test_loader = Data.DataLoader(test_dataset, batch_size=<span class="number">128</span>, shuffle=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">CNN</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>(CNN, self).__init__()</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        一般来说，卷积网络包括以下内容：</span></span><br><span class="line"><span class="string">        1.卷积层</span></span><br><span class="line"><span class="string">        2.神经网络</span></span><br><span class="line"><span class="string">        3.池化层</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        self.conv1 = nn.Sequential(</span><br><span class="line">            nn.Conv1d(</span><br><span class="line">                in_channels=<span class="number">1</span>,</span><br><span class="line">                out_channels=<span class="number">128</span>,</span><br><span class="line">                kernel_size=<span class="number">2</span>,</span><br><span class="line">                <span class="comment"># stride=1,</span></span><br><span class="line">                <span class="comment"># padding=1,  # 边框补全，其计算公式=（kernel_size-1）/2=(5-1)/2=2</span></span><br><span class="line">            ),</span><br><span class="line">            nn.BatchNorm1d(<span class="number">128</span>),  <span class="comment"># 使每一层神经网络的输入保持相同分布的</span></span><br><span class="line">            nn.ReLU(),  <span class="comment"># 非线性激活层</span></span><br><span class="line">            nn.MaxPool1d(kernel_size=<span class="number">2</span>),</span><br><span class="line">        )</span><br><span class="line">        self.conv2 = nn.Sequential(</span><br><span class="line">            nn.Conv1d(</span><br><span class="line">                in_channels=<span class="number">128</span>,</span><br><span class="line">                out_channels=<span class="number">32</span>,</span><br><span class="line">                kernel_size=<span class="number">2</span>,</span><br><span class="line">                <span class="comment"># stride=1,</span></span><br><span class="line">                <span class="comment"># padding=1,  # 边框补全，其计算公式=（kernel_size-1）/2=(5-1)/2=2</span></span><br><span class="line">            ),</span><br><span class="line">            nn.BatchNorm1d(<span class="number">32</span>),</span><br><span class="line">            nn.ReLU(),  <span class="comment"># 非线性激活层</span></span><br><span class="line">            nn.MaxPool1d(kernel_size=<span class="number">2</span>),</span><br><span class="line">        )</span><br><span class="line">        self.out = nn.Linear(<span class="number">576</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self, x</span>):</span><br><span class="line">        x = self.conv1(x)  <span class="comment"># 128,1,78  -&gt;  128 128 38</span></span><br><span class="line">        x = self.conv2(x)  <span class="comment"># 128 128 38 -&gt;  128 128 18</span></span><br><span class="line">        x = x.view(x.size(<span class="number">0</span>), -<span class="number">1</span>)  <span class="comment"># 128,576</span></span><br><span class="line">        output = self.out(x)</span><br><span class="line">        <span class="keyword">return</span> output</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">device = torch.device(<span class="string">&#x27;cuda&#x27;</span> <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> <span class="string">&#x27;cpu&#x27;</span>)</span><br><span class="line">model = CNN()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义损失函数</span></span><br><span class="line">loss = torch.nn.CrossEntropyLoss()</span><br><span class="line"><span class="comment"># 定义优化器</span></span><br><span class="line">optimizer = torch.optim.Adam(model.parameters(), lr=<span class="number">0.001</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">pltfigure</span>(<span class="params">x, y, title, <span class="built_in">id</span>, data</span>):</span><br><span class="line">    plt.subplot(<span class="number">2</span>, <span class="number">2</span>, <span class="built_in">id</span>)</span><br><span class="line">    plt.plot(<span class="built_in">range</span>(<span class="built_in">len</span>(data)), data)</span><br><span class="line">    plt.xlabel(x)</span><br><span class="line">    plt.ylabel(y)</span><br><span class="line">    plt.title(title, fontsize=<span class="number">10</span>)</span><br><span class="line">    <span class="comment"># plt.show()</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">Confusion_matrix_hp</span>(<span class="params">cm</span>):</span><br><span class="line">    cm = pd.DataFrame(cm)</span><br><span class="line">    sns.heatmap(cm, annot=<span class="literal">True</span>, cmap=<span class="string">&#x27;GnBu&#x27;</span>)</span><br><span class="line">    plt.xlabel(<span class="string">&#x27;Real Label&#x27;</span>)</span><br><span class="line">    plt.ylabel(<span class="string">&#x27;Predict Label&#x27;</span>)</span><br><span class="line">    plt.savefig(<span class="string">&#x27;Confusion_CNN_Pytorch.png&#x27;</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 训练</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">train</span>():</span><br><span class="line">    model.train()</span><br><span class="line">    batch_loss, correct, total = <span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> data, label <span class="keyword">in</span> train_loader:</span><br><span class="line">        data, label = data.to(device), label.to(device)</span><br><span class="line">        model.zero_grad()</span><br><span class="line">        output = model(data)</span><br><span class="line">        l = loss(output, label)</span><br><span class="line">        l.backward()</span><br><span class="line">        optimizer.step()</span><br><span class="line">        predict_label = torch.argmax(output, dim=<span class="number">1</span>)</span><br><span class="line">        correct += torch.<span class="built_in">sum</span>(predict_label == label).cpu().item()</span><br><span class="line">        total += <span class="built_in">len</span>(label)</span><br><span class="line">        batch_loss += l.cpu().item()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> correct / total, batch_loss / <span class="built_in">len</span>(train_loader)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test</span>():</span><br><span class="line">    model.<span class="built_in">eval</span>()</span><br><span class="line">    batch_loss, correct, total = <span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span></span><br><span class="line">    predict = np.zeros((<span class="number">1</span>, <span class="number">1</span>))</span><br><span class="line">    <span class="keyword">for</span> data, label <span class="keyword">in</span> test_loader:</span><br><span class="line">        data, label = data.to(device), label.to(device)</span><br><span class="line">        output = model(data)</span><br><span class="line">        batch_loss += loss(output, label).cpu().item()</span><br><span class="line">        predict_label = torch.argmax(output, dim=<span class="number">1</span>)</span><br><span class="line">        predict = np.append(predict, np.array(predict_label))</span><br><span class="line">        correct += torch.<span class="built_in">sum</span>(predict_label == label).cpu().item()</span><br><span class="line">        total += <span class="built_in">len</span>(label)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> correct / total, batch_loss / <span class="built_in">len</span>(test_loader), predict[<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 主程序</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;training on: &#x27;</span>, device)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;batch_size:&#x27;</span>, batch_size)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;epochs:&#x27;</span>, epochs)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;learning_rate:&#x27;</span>, lr)</span><br><span class="line">    <span class="comment"># plt.figure()</span></span><br><span class="line"></span><br><span class="line">    train_acc_list, train_loss_list, test_acc_list, test_loss_list = [], [], [], []</span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(epochs):</span><br><span class="line">        train_acc, train_loss = train()</span><br><span class="line">        test_acc, test_loss, predict = test()</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;epoch %d:  train acc: %.2f%% train loss:%.4f,  test acc: %.2f%%, test loss:%.4f&#x27;</span></span><br><span class="line">              % (epoch, <span class="number">100</span> * train_acc, train_loss, <span class="number">100</span> * test_acc, test_loss))</span><br><span class="line"></span><br><span class="line">        train_acc_list.append(train_acc)</span><br><span class="line">        train_loss_list.append(train_loss)</span><br><span class="line">        test_acc_list.append(test_acc)</span><br><span class="line">        test_loss_list.append(test_loss)</span><br><span class="line"></span><br><span class="line">    test_y = np.array(test_label)</span><br><span class="line">    <span class="built_in">print</span>(metrics.classification_report(test_y, predict))  <span class="comment"># 最后一个epoch的报告</span></span><br><span class="line">    cm = confusion_matrix(test_y, predict)</span><br><span class="line">    Confusion_matrix_hp(cm)</span><br><span class="line">    <span class="comment"># 绘图</span></span><br><span class="line">    pltfigure(x=<span class="string">&#x27;epoch&#x27;</span>, y=<span class="string">&#x27;acc&#x27;</span>, title=<span class="string">&#x27;epoch-train_acc&#x27;</span>, <span class="built_in">id</span>=<span class="number">1</span>, data=train_acc_list)</span><br><span class="line">    pltfigure(x=<span class="string">&#x27;epoch&#x27;</span>, y=<span class="string">&#x27;loss&#x27;</span>, title=<span class="string">&#x27;epoch-train_loss&#x27;</span>, <span class="built_in">id</span>=<span class="number">2</span>, data=train_loss_list)</span><br><span class="line">    pltfigure(x=<span class="string">&#x27;epoch&#x27;</span>, y=<span class="string">&#x27;acc&#x27;</span>, title=<span class="string">&#x27;epoch-test_acc&#x27;</span>, <span class="built_in">id</span>=<span class="number">3</span>, data=test_acc_list)</span><br><span class="line">    pltfigure(x=<span class="string">&#x27;epoch&#x27;</span>, y=<span class="string">&#x27;loss&#x27;</span>, title=<span class="string">&#x27;epoch-test_loss&#x27;</span>, <span class="built_in">id</span>=<span class="number">4</span>, data=test_loss_list)</span><br><span class="line">    plt.tight_layout()</span><br><span class="line">    plt.savefig(<span class="string">&#x27;result_CNN.png&#x27;</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure>
 
-</div><h2 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h2><div class="story post-story"><h3 id="二分类："><a href="#二分类：" class="headerlink" title="二分类："></a>二分类：</h3><p>百分之一数据集</p>
-<p>训练集 70%</p>
-<p>测试集 30% </p>
+</div><h2 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h2><div class="story post-story"><h3 id="二分类："><a href="#二分类：" class="headerlink" title="二分类："></a>二分类：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">epochs = <span class="number">100</span></span><br><span class="line">batch_size = <span class="number">64</span></span><br><span class="line">lr = <span class="number">0.001</span></span><br><span class="line">百分之一数据集</span><br><span class="line">训练集 <span class="number">70</span>%</span><br><span class="line">测试集 <span class="number">30</span>% </span><br></pre></td></tr></table></figure>
+
 <h4 id="准确率，loss曲线"><a href="#准确率，loss曲线" class="headerlink" title="准确率，loss曲线"></a>准确率，loss曲线</h4><p><img src="/../image/CNN-Based-Anomaly-Detection/result_CNN_Pytorch.png" class="lazyload" data-srcset="/../image/CNN-Based-Anomaly-Detection/result_CNN_Pytorch.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="result_CNN_Pytorch"></p>
 <h4 id="最后一个Epoch的报告，混淆矩阵："><a href="#最后一个Epoch的报告，混淆矩阵：" class="headerlink" title="最后一个Epoch的报告，混淆矩阵："></a>最后一个Epoch的报告，混淆矩阵：</h4><p><img src="/../image/CNN-Based-Anomaly-Detection/image-20220421133734280.png" class="lazyload" data-srcset="/../image/CNN-Based-Anomaly-Detection/image-20220421133734280.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220421133734280"></p>
 <p><img src="/../image/CNN-Based-Anomaly-Detection/Confusion_CNN_Pytorch.png" class="lazyload" data-srcset="/../image/CNN-Based-Anomaly-Detection/Confusion_CNN_Pytorch.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Confusion_CNN_Pytorch"></p>
@@ -2816,7 +2815,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-21T13:38:38+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-21T14:06:33+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Apr 21, 2022</p>
@@ -2828,8 +2827,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Anomaly-Detection/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Anomaly Detection</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>机器学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CNN/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>CNN</p></a></div>
-  <span hidden itemprop="keywords">Anomaly Detection 机器学习 CNN</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Anomaly-Detection/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Anomaly Detection</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CNN/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>CNN</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>机器学习</p></a></div>
+  <span hidden itemprop="keywords">Anomaly Detection CNN 机器学习</span>
 
 
         
@@ -2898,6 +2897,34 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <div class="prev-next">
+      
+        <a class='prev' href='/2022/04/22/CNN_Keras/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></p>
+          <p class='content'>CNN_Keras
+
+
+
+precision
+recall
+f1-score
+support
+
+
+
+0
+0.98
+0.98
+0.98
+677891
+
+
+1
+0.00
+0.00
+0.00
+569
+...</p>
+        </a>
       
       
         <a class='next' href='/2022/04/21/KNN(%E8%87%AA%E5%B7%B1%E5%86%99)-Based-Anomaly-Detection/'>
@@ -3117,7 +3144,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1650520678541.js"></script>
+<script src="/js/app.js?time=1650612705872.js"></script>
 
 
 
@@ -3234,7 +3261,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1650520678541')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1650612705872')</script>
 
 
 
@@ -3363,19 +3390,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1650520678541")
+        volantis.js("/js/plugins/sites.js?time=1650612705872")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1650520678541")
+        volantis.js("/js/plugins/friends.js?time=1650612705872")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1650520678541")
+        volantis.js("/js/plugins/contributors.js?time=1650612705872")
       }
     
   };
@@ -3488,7 +3515,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650520678541').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650612705872').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3508,7 +3535,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1650520678541");
+    return volantis.js("/js/search/hexo.js?time=1650612705872");
   }
 
   function loadSearchService() {
@@ -3827,7 +3854,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1650520678541').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1650612705872').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4060,7 +4087,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zlgan.top/categories/入侵检测/","name":"入侵检测"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/","name":"CNN(Pytorch)-Based Anomaly Detection"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CNN(Pytorch)-Based Anomaly Detection","description":"","datePublished":"2022-04-21T03:34:31.722Z","dateModified":"2022-04-21T05:38:38.017Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/","wordCount":0,"articleSection":"入侵检测","keywords":"Anomaly Detection,机器学习,CNN","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zlgan.top/categories/入侵检测/","name":"入侵检测"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/","name":"CNN(Pytorch)-Based Anomaly Detection"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CNN(Pytorch)-Based Anomaly Detection","description":"","datePublished":"2022-04-21T03:34:31.722Z","dateModified":"2022-04-21T06:06:33.145Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/21/CNN-Based-Anomaly-Detection/","wordCount":0,"articleSection":"入侵检测","keywords":"Anomaly Detection,CNN,机器学习","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
