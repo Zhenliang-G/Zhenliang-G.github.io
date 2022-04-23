@@ -20,23 +20,23 @@
   <meta content="Zhenliang&#39;Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1650708392709" as="style">
+  <link rel="preload" href="/css/style.css?time=1650708828271" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
   <title>Zhenliang'Blog</title>
   <meta name="keywords" content="null">
-  <meta name="description" content="CNN_Keras    precision recall f1-score support    0 0.98 0.98 0.98 677891   1 0.00 0.00 0.00 569   2 0.97 0.92 0.94 37976   3 0.95 0.88 0.91 3038   4 0.95 0.86 0.91 68973   5 0.81 0.73 0.76 1673   6 0">
+  <meta name="description" content="CNN_Keras    precision recall f1-score support    BENIGN 0.98 0.98 0.98 677891   Bot 0.90 0.40 0.56 569   DDoS 0.97 0.92 0.94 37976   DoS  GoldenEye 0.95 0.88 0.91 3038   DoS  Hulk 0.95 0.86 0.91 6897">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Zhenliang&#39;Blog">
 <meta property="og:url" content="https://www.zlgan.top/2022/04/22/CNN_Keras/index.html">
 <meta property="og:site_name" content="Zhenliang&#39;Blog">
-<meta property="og:description" content="CNN_Keras    precision recall f1-score support    0 0.98 0.98 0.98 677891   1 0.00 0.00 0.00 569   2 0.97 0.92 0.94 37976   3 0.95 0.88 0.91 3038   4 0.95 0.86 0.91 68973   5 0.81 0.73 0.76 1673   6 0">
+<meta property="og:description" content="CNN_Keras    precision recall f1-score support    BENIGN 0.98 0.98 0.98 677891   Bot 0.90 0.40 0.56 569   DDoS 0.97 0.92 0.94 37976   DoS  GoldenEye 0.95 0.88 0.91 3038   DoS  Hulk 0.95 0.86 0.91 6897">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-22T00:42:03.534Z">
-<meta property="article:modified_time" content="2022-04-23T09:48:36.958Z">
+<meta property="article:modified_time" content="2022-04-23T10:09:11.354Z">
 <meta property="article:author" content="Zhenliang_Gan">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.zlgan.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1794,8 +1794,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1650708392709" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1650708392709"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1650708828271" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1650708828271"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1872,9 +1872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1650708392709","sites":"/js/plugins/sites.js?time=1650708392709","friends":"/js/plugins/friends.js?time=1650708392709","parallax":"/js/plugins/parallax.js?time=1650708392709","rightMenu":"/js/plugins/rightMenu.js?time=1650708392709","contributors":"/js/plugins/contributors.js?time=1650708392709","message":"/js/thirdparty/message.js?time=1650708392709","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650708392709","search":"/js/search/hexo.js?time=1650708392709"},"css":{"style":"/css/style.css?time=1650708392709","message":"/css/message.css?time=1650708392709"}},
+    cdn: {"js":{"app":"/js/app.js?time=1650708828271","sites":"/js/plugins/sites.js?time=1650708828271","friends":"/js/plugins/friends.js?time=1650708828271","parallax":"/js/plugins/parallax.js?time=1650708828271","rightMenu":"/js/plugins/rightMenu.js?time=1650708828271","contributors":"/js/plugins/contributors.js?time=1650708828271","message":"/js/thirdparty/message.js?time=1650708828271","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650708828271","search":"/js/search/hexo.js?time=1650708828271"},"css":{"style":"/css/style.css?time=1650708828271","message":"/css/message.css?time=1650708828271"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Sat Apr 23 2022 18:06:32 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Sat Apr 23 2022 18:13:48 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","donate"],
       for_post: ["toc"],
@@ -2688,112 +2688,112 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <thead>
 <tr>
 <th align="center"></th>
-<th align="center">precision</th>
-<th align="center">recall</th>
-<th align="center">f1-score</th>
-<th align="center">support</th>
+<th align="center"><strong>precision</strong></th>
+<th align="center"><strong>recall</strong></th>
+<th align="center"><strong>f1-score</strong></th>
+<th align="center"><strong>support</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">0</td>
+<td align="center">BENIGN</td>
 <td align="center">0.98</td>
 <td align="center">0.98</td>
 <td align="center">0.98</td>
 <td align="center">677891</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="center">0.00</td>
-<td align="center">0.00</td>
-<td align="center">0.00</td>
+<td align="center">Bot</td>
+<td align="center">0.90</td>
+<td align="center">0.40</td>
+<td align="center">0.56</td>
 <td align="center">569</td>
 </tr>
 <tr>
-<td align="center">2</td>
+<td align="center">DDoS</td>
 <td align="center">0.97</td>
 <td align="center">0.92</td>
 <td align="center">0.94</td>
 <td align="center">37976</td>
 </tr>
 <tr>
-<td align="center">3</td>
+<td align="center">DoS  GoldenEye</td>
 <td align="center">0.95</td>
 <td align="center">0.88</td>
 <td align="center">0.91</td>
 <td align="center">3038</td>
 </tr>
 <tr>
-<td align="center">4</td>
+<td align="center">DoS  Hulk</td>
 <td align="center">0.95</td>
 <td align="center">0.86</td>
 <td align="center">0.91</td>
 <td align="center">68973</td>
 </tr>
 <tr>
-<td align="center">5</td>
+<td align="center">DoS  Slowhttptest</td>
 <td align="center">0.81</td>
 <td align="center">0.73</td>
 <td align="center">0.76</td>
 <td align="center">1673</td>
 </tr>
 <tr>
-<td align="center">6</td>
+<td align="center">DoS  slowloris</td>
 <td align="center">0.90</td>
 <td align="center">0.51</td>
 <td align="center">0.65</td>
 <td align="center">1759</td>
 </tr>
 <tr>
-<td align="center">7</td>
+<td align="center">FTP-Patator</td>
 <td align="center">0.97</td>
 <td align="center">0.50</td>
 <td align="center">0.66</td>
 <td align="center">2383</td>
 </tr>
 <tr>
-<td align="center">8</td>
+<td align="center">Heartbleed</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">4</td>
 </tr>
 <tr>
-<td align="center">9</td>
+<td align="center">Infiltration</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">10</td>
 </tr>
 <tr>
-<td align="center">10</td>
+<td align="center">PortScan</td>
 <td align="center">0.81</td>
 <td align="center">0.99</td>
 <td align="center">0.89</td>
 <td align="center">47463</td>
 </tr>
 <tr>
-<td align="center">11</td>
+<td align="center">SSH-Patator</td>
 <td align="center">1.00</td>
 <td align="center">0.51</td>
 <td align="center">0.68</td>
 <td align="center">1730</td>
 </tr>
 <tr>
-<td align="center">12</td>
-<td align="center">0.00</td>
-<td align="center">0.00</td>
-<td align="center">0.00</td>
+<td align="center">Web  Attack Brute Force</td>
+<td align="center">0.70</td>
+<td align="center">0.94</td>
+<td align="center">0.80</td>
 <td align="center">452</td>
 </tr>
 <tr>
-<td align="center">13</td>
+<td align="center">Web  Attack Sql  Injection</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">10</td>
 </tr>
 <tr>
-<td align="center">14</td>
+<td align="center">Web  Attack XSS</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
@@ -2807,14 +2807,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <td align="center">844140</td>
 </tr>
 <tr>
-<td align="center">macro avg</td>
+<td align="center">macro  avg</td>
 <td align="center">0.56</td>
 <td align="center">0.46</td>
 <td align="center">0.49</td>
 <td align="center">844140</td>
 </tr>
 <tr>
-<td align="center">weighted avg</td>
+<td align="center">weighted  avg</td>
 <td align="center">0.96</td>
 <td align="center">0.96</td>
 <td align="center">0.96</td>
@@ -2962,112 +2962,112 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <thead>
 <tr>
 <th align="center"></th>
-<th align="center">precision</th>
-<th align="center">recall</th>
-<th align="center">f1-score</th>
-<th align="center">support</th>
+<th align="center"><strong>precision</strong></th>
+<th align="center"><strong>recall</strong></th>
+<th align="center"><strong>f1-score</strong></th>
+<th align="center"><strong>support</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">0</td>
+<td align="center">BENIGN</td>
 <td align="center">0.99</td>
 <td align="center">0.99</td>
 <td align="center">0.99</td>
 <td align="center">678355</td>
 </tr>
 <tr>
-<td align="center">1</td>
+<td align="center">Bot</td>
 <td align="center">0.58</td>
 <td align="center">0.60</td>
 <td align="center">0.59</td>
 <td align="center">566</td>
 </tr>
 <tr>
-<td align="center">2</td>
+<td align="center">DDoS</td>
 <td align="center">1.00</td>
 <td align="center">0.98</td>
 <td align="center">0.99</td>
 <td align="center">38051</td>
 </tr>
 <tr>
-<td align="center">3</td>
+<td align="center">DoS  GoldenEye</td>
 <td align="center">0.99</td>
 <td align="center">0.96</td>
 <td align="center">0.97</td>
 <td align="center">3081</td>
 </tr>
 <tr>
-<td align="center">4</td>
+<td align="center">DoS  Hulk</td>
 <td align="center">0.99</td>
 <td align="center">0.91</td>
 <td align="center">0.95</td>
 <td align="center">68930</td>
 </tr>
 <tr>
-<td align="center">5</td>
+<td align="center">DoS  Slowhttptest</td>
 <td align="center">0.88</td>
 <td align="center">0.98</td>
 <td align="center">0.93</td>
 <td align="center">1654</td>
 </tr>
 <tr>
-<td align="center">6</td>
+<td align="center">DoS  slowloris</td>
 <td align="center">0.99</td>
 <td align="center">0.96</td>
 <td align="center">0.97</td>
 <td align="center">1727</td>
 </tr>
 <tr>
-<td align="center">7</td>
+<td align="center">FTP-Patator</td>
 <td align="center">0.99</td>
 <td align="center">0.96</td>
 <td align="center">0.97</td>
 <td align="center">2305</td>
 </tr>
 <tr>
-<td align="center">8</td>
+<td align="center">Heartbleed</td>
 <td align="center">0.75</td>
 <td align="center">1.00</td>
 <td align="center">0.86</td>
 <td align="center">3</td>
 </tr>
 <tr>
-<td align="center">9</td>
+<td align="center">Infiltration</td>
 <td align="center">0.50</td>
 <td align="center">0.11</td>
 <td align="center">0.18</td>
 <td align="center">9</td>
 </tr>
 <tr>
-<td align="center">10</td>
+<td align="center">PortScan</td>
 <td align="center">0.85</td>
 <td align="center">0.99</td>
 <td align="center">0.91</td>
 <td align="center">46994</td>
 </tr>
 <tr>
-<td align="center">11</td>
+<td align="center">SSH-Patator</td>
 <td align="center">0.99</td>
 <td align="center">0.57</td>
 <td align="center">0.73</td>
 <td align="center">1808</td>
 </tr>
 <tr>
-<td align="center">12</td>
+<td align="center">Web  Attack Brute Force</td>
 <td align="center">1.00</td>
 <td align="center">0.06</td>
 <td align="center">0.11</td>
 <td align="center">449</td>
 </tr>
 <tr>
-<td align="center">13</td>
+<td align="center">Web  Attack Sql  Injection</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">9</td>
 </tr>
 <tr>
-<td align="center">14</td>
+<td align="center">Web  Attack XSS</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
 <td align="center">0.00</td>
@@ -3081,14 +3081,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <td align="center">844140</td>
 </tr>
 <tr>
-<td align="center">macro avg</td>
+<td align="center">macro  avg</td>
 <td align="center">0.77</td>
 <td align="center">0.67</td>
 <td align="center">0.68</td>
 <td align="center">844140</td>
 </tr>
 <tr>
-<td align="center">weighted avg</td>
+<td align="center">weighted  avg</td>
 <td align="center">0.98</td>
 <td align="center">0.98</td>
 <td align="center">0.98</td>
@@ -3136,7 +3136,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-23T17:48:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-23T18:09:11+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Apr 23, 2022</p>
@@ -3436,7 +3436,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1650708392709.js"></script>
+<script src="/js/app.js?time=1650708828271.js"></script>
 
 
 
@@ -3553,7 +3553,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1650708392709')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1650708828271')</script>
 
 
 
@@ -3682,19 +3682,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1650708392709")
+        volantis.js("/js/plugins/sites.js?time=1650708828271")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1650708392709")
+        volantis.js("/js/plugins/friends.js?time=1650708828271")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1650708392709")
+        volantis.js("/js/plugins/contributors.js?time=1650708828271")
       }
     
   };
@@ -3807,7 +3807,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650708392709').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1650708828271').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3827,7 +3827,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1650708392709");
+    return volantis.js("/js/search/hexo.js?time=1650708828271");
   }
 
   function loadSearchService() {
@@ -4146,7 +4146,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1650708392709').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1650708828271').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4379,7 +4379,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/22/CNN_Keras/","name":""}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"","description":"","datePublished":"2022-04-22T00:42:03.534Z","dateModified":"2022-04-23T09:48:36.958Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/22/CNN_Keras/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/22/CNN_Keras/","wordCount":0,"image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Zhenliang'Blog","url":"https://www.zlgan.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zlgan.top/","name":"Zhenliang'Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zlgan.top/2022/04/22/CNN_Keras/","name":""}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"","description":"","datePublished":"2022-04-22T00:42:03.534Z","dateModified":"2022-04-23T10:09:11.354Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zlgan.top/2022/04/22/CNN_Keras/"},"author":{"@type":"Person","name":"Zhenliang_Gan","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zlgan.top/"},"publisher":{"@type":"Organization","name":"Zhenliang'Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zlgan.top/2022/04/22/CNN_Keras/","wordCount":0,"image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
